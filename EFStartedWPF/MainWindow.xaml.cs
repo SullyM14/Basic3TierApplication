@@ -80,10 +80,13 @@ namespace EFStartedWPF
 
         private void Update_Post_Button_Click(object sender, RoutedEventArgs e)
         {
-            _crud.UpdatePost(TextId.Text, TextTitle.Text, TextContent.Text);
-            ListBoxPosts.ItemsSource = null;
-            ListBoxPosts.ItemsSource = _crud.RetrieveAllPosts(ListBoxBlogs.SelectedItem);
-            PopulatePosts(); 
+            if (ListBoxPosts.SelectedItem != null)
+            {
+                _crud.UpdatePost(TextId.Text, TextTitle.Text, TextContent.Text);
+                ListBoxPosts.ItemsSource = null;
+                ListBoxPosts.ItemsSource = _crud.RetrieveAllPosts(ListBoxBlogs.SelectedItem);
+                PopulatePosts();
+            }
         }
 
     }

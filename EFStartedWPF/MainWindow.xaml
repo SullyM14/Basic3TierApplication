@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Blogs" Height="750" Width="1238">
     <Grid Margin="10,10,0,0">
-        <ListBox x:Name="ListBoxBlogs" Background="Beige" Grid.Column="0" SelectionChanged="ListBoxBlogs_SelectionChanged" Margin="-5,133,886,0"/>
-        <ListBox x:Name="ListBoxPosts" Background="Beige" Grid.Column="0" SelectionChanged="ListBoxPosts_SelectionChanged" Margin="342,0,0,515" HorizontalAlignment="Left" Width="886"/>
+        <ListBox x:Name="ListBoxBlogs" Grid.Column="0" SelectionChanged="ListBoxBlogs_SelectionChanged" Margin="-10,-10,892,143"/>
+        <ListBox x:Name="ListBoxPosts" Grid.Column="0" SelectionChanged="ListBoxPosts_SelectionChanged" Margin="336,-10,0,525" HorizontalAlignment="Left" Width="892"/>
         <Label Name="LabelId" Content="ID" FontSize="24" HorizontalAlignment="Left" Margin="358,298,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
         <Label Name="LabelTitle" Content="Title" FontSize="24" HorizontalAlignment="Left" Margin="358,409,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
         <Label Name="LabelContent" Content="Content" FontSize="24" HorizontalAlignment="Left" Margin="363,485,0,0" VerticalAlignment="Top" Height="64" Width="148" RenderTransformOrigin="0.5,0.5">
@@ -16,15 +16,15 @@
         <TextBox Name="TextId" HorizontalAlignment="Center" Margin="0,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50" IsEnabled="False" IsReadOnlyCaretVisible="True"/>
         <TextBox Name="TextTitle" HorizontalAlignment="Center" Margin="0,409,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
         <TextBox Name="TextContent" HorizontalAlignment="Center" Margin="0,486,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
-        <Button Content="Add Blog" FontSize="24" HorizontalAlignment="Left" Margin="114,76,0,0" VerticalAlignment="Top" Height="52" Width="110" Click="Add_Blog_Button_Click"/>
-        <TextBox x:Name="TextNewBlogName" HorizontalAlignment="Left" Margin="48,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50" Text="Enter New Blog Name"/>
-        <Button Content="Add" FontSize="24" HorizontalAlignment="Left" Margin="928,576,0,0" VerticalAlignment="Top" Height="52" Width="145" Click="Add_Post_Button_Click"/>
+        <Button Content="Add Blog" FontSize="24" HorizontalAlignment="Left" Margin="108,662,0,0" VerticalAlignment="Top" Height="52" Width="110" Click="Add_Blog_Button_Click"/>
+        <TextBox x:Name="TextNewBlogName" HorizontalAlignment="Left" Margin="42,596,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50" Text="Enter New Blog Name"/>
+        <Button Content="Add" FontSize="24" HorizontalAlignment="Left" Margin="920,486,0,0" VerticalAlignment="Top" Height="52" Width="145" Click="Add_Post_Button_Click"/>
         <Button Content="Update" FontSize="24" HorizontalAlignment="Left" Margin="514,592,0,0" VerticalAlignment="Top" Height="52" Width="100" Click="Update_Post_Button_Click"/>
-        <Label x:Name="LabelTitleNew" Content="Title" FontSize="24" HorizontalAlignment="Left" Margin="809,407,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
-        <Label x:Name="LabelContentNew" Content="Content" FontSize="24" HorizontalAlignment="Left" Margin="804,480,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
-        <TextBox x:Name="TextTitleNew" HorizontalAlignment="Left" Margin="952,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
-        <TextBox x:Name="TextContentNew" HorizontalAlignment="Left" Margin="952,484,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
+        <Label x:Name="LabelTitleNew" Content="Title" FontSize="24" HorizontalAlignment="Left" Margin="801,317,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
+        <Label x:Name="LabelContentNew" Content="Content" FontSize="24" HorizontalAlignment="Left" Margin="796,390,0,0" VerticalAlignment="Top" Height="64" Width="148"/>
+        <TextBox x:Name="TextTitleNew" HorizontalAlignment="Left" Margin="944,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
+        <TextBox x:Name="TextContentNew" HorizontalAlignment="Left" Margin="944,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="50"/>
         <Label x:Name="LabelCurrentPost" Content="Current Post" FontSize="24" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Margin="363,234,0,0" VerticalAlignment="Top" Height="64" Width="372"/>
-        <Label x:Name="LabelNewPost" Content="New Post" FontSize="24" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="809,316,0,0" VerticalAlignment="Top" Height="64" Width="372"/>
+        <Label x:Name="LabelNewPost" Content="New Post" FontSize="24" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="801,234,0,0" VerticalAlignment="Top" Height="64" Width="372"/>
     </Grid>
 </Window>
